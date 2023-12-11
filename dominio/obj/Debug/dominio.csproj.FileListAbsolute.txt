@@ -1,0 +1,6 @@
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\bin\Debug\dominio.dll
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\bin\Debug\dominio.pdb
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\obj\Debug\dominio.dll
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\dominio\obj\Debug\dominio.pdb
