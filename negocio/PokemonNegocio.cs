@@ -50,5 +50,13 @@ namespace negocio
                 throw ex;
             }
         }
+        public void agregar(Pokemon nuevo)
+        {
+
+        }
+        public void modificar(Pokemon modificar)
+        {
+
+        }
     }
 }
