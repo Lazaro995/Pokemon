@@ -13,3 +13,4 @@ C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\ProyectoAplicacion\b
 C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\ProyectoAplicacion\obj\Debug\ProyectoAplicacion.csproj.CopyComplete
 C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\ProyectoAplicacion\bin\Debug\negocio.dll
 C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\ProyectoAplicacion\bin\Debug\negocio.pdb
+C:\Users\Lazaro\Desktop\Curso C# Nivel 2\ProyectoAplicacion\ProyectoAplicacion\obj\Debug\ProyectoAplicacion.frmAltaPokemon.resources
