@@ -43,5 +43,10 @@ namespace ProyectoAplicacion
                 throw ex;
             }
         }
+
+        private void frmAltaPokemon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
