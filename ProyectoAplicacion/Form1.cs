@@ -21,11 +21,7 @@ namespace ProyectoAplicacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             PokemonNegocio negocio = new PokemonNegocio();
-            listaPokemon = negocio.listar();
-            dgvPokemons.DataSource = listaPokemon;
-            dgvPokemons.Columns["UrlImagen"].Visible = false;
-            cargarImagen(listaPokemon[0].UrlImagen);
+            cargar();
         }
 
         private void dgvPokemons_SelectionChanged(object sender, EventArgs e)
@@ -33,7 +29,23 @@ namespace ProyectoAplicacion
             Pokemon seleccionado = (Pokemon)dgvPokemons.CurrentRow.DataBoundItem;
             cargarImagen(seleccionado.UrlImagen);
         }
+        private void cargar()
+        {
+            PokemonNegocio negocio = new PokemonNegocio();
+            try
+            {
+                listaPokemon = negocio.listar();
+                dgvPokemons.DataSource = listaPokemon;
+                dgvPokemons.Columns["UrlImagen"].Visible = false;
+                cargarImagen(listaPokemon[0].UrlImagen);
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void cargarImagen(string imagen)
         {
             try
@@ -51,6 +63,8 @@ namespace ProyectoAplicacion
         {
             frmAltaPokemon alta = new frmAltaPokemon();
             alta.ShowDialog();
+            cargar();
+
         }
     }
 }
