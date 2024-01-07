@@ -46,7 +46,17 @@ namespace ProyectoAplicacion
 
         private void frmAltaPokemon_Load(object sender, EventArgs e)
         {
+            ElementoNegocio elementoNegocio = new ElementoNegocio();
+            try
+            {
+                cboTipo.DataSource = elementoNegocio.listar();
+                cboDebilidad.DataSource = elementoNegocio.listar();
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
