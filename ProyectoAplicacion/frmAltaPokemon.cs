@@ -32,6 +32,9 @@ namespace ProyectoAplicacion
                 poke.Numero = int.Parse(txtNumero.Text);
                 poke.Nombre = txtNombre.Text;
                 poke.Descripcion = txtDescripcion.Text;
+                poke.Tipo = (Elemento)cboTipo.SelectedItem;
+                poke.Debilidad = (Elemento)cboDebilidad.SelectedItem;
+
                 negocio.agregar(poke);
                 MessageBox.Show("Ha agregado exitosamente un pokemon nuevo");
                 Close();
@@ -40,8 +43,8 @@ namespace ProyectoAplicacion
             catch (Exception ex)
             {
 
-                throw ex;
-            }
+                MessageBox.Show(ex.ToString()); 
+                    }
         }
 
         private void frmAltaPokemon_Load(object sender, EventArgs e)

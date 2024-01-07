@@ -130,7 +130,9 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.IntegralHeight = false;
             this.cboTipo.Location = new System.Drawing.Point(129, 127);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(100, 21);
@@ -138,6 +140,7 @@
             // 
             // cboDebilidad
             // 
+            this.cboDebilidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDebilidad.FormattingEnabled = true;
             this.cboDebilidad.Location = new System.Drawing.Point(129, 154);
             this.cboDebilidad.Name = "cboDebilidad";
