@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
 using negocio;
+
 namespace ProyectoAplicacion
 {
     public partial class frmAltaPokemon : Form
@@ -32,6 +33,7 @@ namespace ProyectoAplicacion
                 poke.Numero = int.Parse(txtNumero.Text);
                 poke.Nombre = txtNombre.Text;
                 poke.Descripcion = txtDescripcion.Text;
+                poke.UrlImagen = txtUrlImagen.Text;
                 poke.Tipo = (Elemento)cboTipo.SelectedItem;
                 poke.Debilidad = (Elemento)cboDebilidad.SelectedItem;
 
@@ -59,6 +61,23 @@ namespace ProyectoAplicacion
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txtUrlImagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txtUrlImagen.Text);
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbxPokemon.Load(imagen);
+
+            }
+            catch (Exception ex)
+            {
+                pbxPokemon.Load("https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
             }
         }
     }
